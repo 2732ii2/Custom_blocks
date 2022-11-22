@@ -4,8 +4,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/blockly"></script>
+   
+    <style>
+    body{
+        
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .con{
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid pink;
+    }
+    h1{
+        font-size: 32px;
+        color:red;
+    }
+      .food_1{
+            background:white;
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 200px;
+        }
+      .food{
+            background:url(https://image.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg);
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 200px;
+        }
+         button{
+            width: 140px;
+            height: 50px;
+            padding: 5px;
+            background: red;
+            color: white;
+            border-radius: 10px;
+            font-size: 22px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        .donkey{
+            background:url(https://cdn.pixabay.com/photo/2014/04/03/00/35/hippo-308772_640.png);
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 200px;
+        }
+    p{
+      border: 3px solid black;
+      text-align: center;
+      font-size: 22px;
+      text-transform: capitalize;
+    }
+    #switch{
+        height: 500px;
+        width: 500px;
+        border-radius: 20px;
+        border: 5px solid black;
+        display: grid;
+            grid-template-columns: repeat(16,1fr);   
+            grid-template-rows: repeat(16,1fr); 
+       
+    }
+    #bloclyDiv
+    {
+        width:50%;
+        height: 60%;
+        margin: 20px;
+        border: 1px solid black;
+    }
+    .main{
+      width: 60%;
+      height: 90%;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid red;
+    }
+    .main_2{
+      display: flex;
+      margin-left: 80px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    </style>
 </head>
 <body>
-    hello
+      <div class="con">
+        <div class="main">
+            <div id="blocklyDiv"> </div>
+        </div>
+        <div class="main_2">
+          <button>Score : <span id="sp"> 0 </span> </button>
+          <div id="switch"></div>
+          <p >Run javascript</p>
+        </div>
+      </div>
+      
+     
+    
 </body>
+    
+    <script src="custom.blocks.js"></script>
+    <!-- <script src="block.js"></script> -->
+    <!-- <script src="./simulation.main.js"></script> -->
 </html>
